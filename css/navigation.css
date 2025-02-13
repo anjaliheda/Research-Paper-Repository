@@ -1,0 +1,103 @@
+.navbar {
+    background: linear-gradient(135deg, var(--primary-blue), var(--primary-dark));
+    box-shadow: var(--shadow-md);
+    padding: var(--spacing-sm) 0;
+}
+
+.navbar-brand {
+    color: var(--surface-white) !important;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+}
+
+.navbar-nav {
+    gap: var(--spacing-sm);
+}
+
+.nav-link {
+    border-radius: var(--radius-md);
+    color: var(--surface-white) !important;
+    font-weight: 500;
+    opacity: 0.9;
+    padding: 0.5rem 1rem;
+    position: relative;
+    transition: var(--transition-all);
+}
+
+.nav-link:hover {
+    opacity: 1;
+    transform: translateY(-1px);
+}
+
+.nav-link.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    opacity: 1;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 24px;
+    height: 2px;
+    background-color: var(--surface-white);
+    transform: translateX(-50%);
+}
+
+/* Mobile Navigation */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: var(--primary-dark);
+        border-radius: var(--radius-lg);
+        margin-top: var(--spacing-sm);
+        padding: var(--spacing-sm);
+    }
+
+    .nav-link {
+        padding: 0.75rem 1rem;
+    }
+
+    .nav-link:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        transform: none;
+    }
+}
+
+/* User Menu */
+.user-menu {
+    position: relative;
+}
+
+.user-menu .dropdown-toggle {
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.user-menu .dropdown-toggle::after {
+    display: none;
+}
+
+.user-menu .dropdown-menu {
+    background-color: var(--surface-white);
+    border: none;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    margin-top: var(--spacing-sm);
+    padding: 0.5rem;
+}
+
+.user-menu .dropdown-item {
+    border-radius: var(--radius-sm);
+    color: var(--text-primary);
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+    transition: var(--transition-all);
+}
+
+.user-menu .dropdown-item:hover {
+    background-color: var(--surface-light);
+    color: var(--primary-blue);
+}

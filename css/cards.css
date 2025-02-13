@@ -1,0 +1,296 @@
+.papers-grid {
+    display: grid;
+    gap: var(--spacing-md);
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    padding: var(--spacing-md) 0;
+}
+
+.paper-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.paper-card .card-image {
+    background-color: var(--surface-light);
+    padding: var(--spacing-md);
+    text-align: center;
+    position: relative;
+}
+
+.paper-card .card-image img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: var(--radius-full);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-transform);
+}
+
+.paper-card:hover .card-image img {
+    transform: scale(1.05);
+}
+
+.favorite-btn {
+    position: absolute;
+    top: var(--spacing-sm);
+    right: var(--spacing-sm);
+    background: var(--surface-white);
+    border: none;
+    border-radius: var(--radius-full);
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-danger);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-all);
+    z-index: 1;
+}
+
+.favorite-btn:hover {
+    transform: scale(1.1);
+    box-shadow: var(--shadow-md);
+}
+
+.favorite-btn i {
+    font-size: 1rem;
+}
+
+.paper-card .card-body {
+    padding: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.paper-card .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.paper-card .card-text {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.paper-card .card-footer {
+    margin-top: auto;
+    padding: var(--spacing-sm);
+    background: none;
+    border-top: 1px solid var(--surface-light);
+}
+
+.paper-card .btn {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+
+
+/* Author Cards */
+.author-card {
+    text-align: center;
+    padding-top: var(--spacing-lg);
+}
+
+.author-card .profile-image {
+    width: 120px;
+    height: 120px;
+    margin: -60px auto var(--spacing-md);
+    position: relative;
+}
+
+.author-card .profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius-full);
+    border: 4px solid var(--surface-white);
+    box-shadow: var(--shadow-md);
+}
+
+/* Loading States */
+.skeleton {
+    background: linear-gradient(
+        90deg,
+        var(--surface-light) 25%,
+        var(--surface-white) 37%,
+        var(--surface-light) 63%
+    );
+    background-size: 400% 100%;
+    animation: skeleton-loading 1.4s ease infinite;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+/* Author Header Card */
+.author-header {
+    text-align: center;
+    padding: var(--spacing-lg) var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
+    background: linear-gradient(135deg, var(--primary-blue), var(--primary-dark));
+    color: var(--surface-white);
+    border-radius: var(--radius-lg);
+}
+
+.author-header img {
+    width: 250px;
+    height: 250px;
+    border-radius: var(--radius-full);
+    border: 4px solid var(--surface-white);
+    box-shadow: var(--shadow-lg);
+    margin-bottom: var(--spacing-md);
+}
+
+.author-header h2 {
+    color: var(--surface-white);
+    margin-bottom: var(--spacing-xs);
+}
+
+.author-header p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 0;
+}
+
+/* Paper Card Additional Styles */
+.paper-card .card-text small {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: var(--spacing-xs);
+}
+
+.paper-card .card-text i {
+    color: var(--text-light);
+}
+
+/* Alert Styling */
+.alert {
+    border: none;
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-md);
+    background-color: var(--surface-light);
+    color: var(--text-primary);
+}
+
+.alert-info {
+    background-color: rgba(var(--primary-blue-rgb), 0.1);
+    color: var(--primary-blue);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .papers-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    
+    .author-header {
+        padding: var(--spacing-md);
+    }
+    
+    .author-header img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Add to cards.css */
+.action-buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display:flex;
+    gap: 8px;
+}
+
+.edit-btn,
+.delete-Paper-btn {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.edit-btn {
+    background-color: #e9ecef;
+    color: #1e2124;
+}
+
+.delete-Paper-btn {
+    background-color: #ffe5e5;
+    color: #dc3545;
+}
+
+.edit-btn:hover {
+    background-color: #dde1e4;
+}
+
+.delete-Paper-btn:hover {
+    background-color: #ffd1d1;
+}
+
+.edit-btn i,
+.delete-Paper-btn i {
+    font-size: 16px;
+}
+
+/* Card layout */
+#allPapersList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: 0;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+}
+
+.card-body {
+    padding: 20px;
+    position: relative;
+}
+
+.card-title {
+    font-size: 1rem;
+    margin-right: 80px;
+    margin-bottom: 10px;
+}
+
+.author-text {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.view-paper-btn {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+}

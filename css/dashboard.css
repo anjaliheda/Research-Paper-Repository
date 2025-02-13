@@ -1,0 +1,28 @@
+  .select2-container .select2-selection--single {
+    height: 45px;
+    line-height: 45px; 
+}
+
+.select2-container .select2-selection--multiple {
+    height: 45px;
+    line-height: 45px;
+}
+
+.select2-dropdown {
+    max-height: 400px; 
+    overflow-y: auto;  
+}
+
+
+.card-container {
+    max-height: 500px; /* Adjust as needed */
+    overflow-y: auto;  /* Enable scrolling if content overflows */
+}
+
+.card {
+    margin-bottom: 20px;
+    margin-bottom: 15px;
+    height: 140px;  /* Make cards shorter */
+    position: relative; 
+}
+

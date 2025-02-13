@@ -1,0 +1,149 @@
+/* General Body Styles */
+:root {
+    --c-blue: #1e3c72; /* Darker Blue */
+    --c-light-blue: #1a78c2; /* Lighter Blue */
+    --c-white: #fefefe;
+    --t-blue: rgba(30, 60, 114, 0.8); /* Darker gradient blue */
+    --g-blue: linear-gradient(135deg, var(--t-blue) 100%, rgba(30, 60, 114, 0) 100%);
+    --s-basic: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+
+  .transition-transform {
+    transition: transform 0.3s ease-in-out;
+}
+
+.transition-transform:hover {
+    transform: translateY(-10px);
+}
+
+.btn-outline-danger {
+    border-color: #dc3545;
+}
+
+.btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-outline-primary {
+    border-color: #007bff;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.card-body .btn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.text-muted {
+    font-size: 0.95rem;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+  /* Navbar Styles */
+  .navbar {
+    background: linear-gradient(135deg, var(--c-light-blue) 100%, rgba(17, 38, 190, 0.8) 100%);
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .navbar-toggler {
+  border: none;
+  background-color: transparent;
+}
+
+.navbar-toggler-icon {
+  background-color: #fff; /* White color for the toggler icon */
+  border-radius: 4px; /* Optional, just to give it a slight rounded effect */
+  width: 30px;
+  height: 3px; /* Adjust the size */
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  background-color: #fff; /* Make sure the top and bottom lines are also visible */
+}
+
+  .navbar-toggler-icon {
+    background-color: #fff;
+  }
+
+  .navbar-brand {
+    font-size: 1.0rem;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+  }
+
+  .navbar-brand:hover {
+    color: #f39c12; /* Gold color for hover effect */
+  }
+
+  .navbar-nav .nav-item {
+    margin-left: 1rem;
+  }
+
+  .nav-link {
+    color: #ecf0f1; /* Light gray */
+    font-size: 1.1rem;
+    padding: 12px 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  }
+
+  .nav-link:hover {
+    background-color: #2c3e50; /* Slightly darker gray */
+    color: #fff;
+    transform: scale(1.05); /* Slight scaling on hover */
+  }
+
+  /* Active Link Style */
+  .nav-link.active {
+    background-color: var(--c-light-blue); /* Lighter blue for active link */
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .navbar-nav {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .navbar-nav .nav-item {
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  /* Smooth Transition for Collapse */
+  .navbar-collapse {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  
