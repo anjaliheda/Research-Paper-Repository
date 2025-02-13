@@ -2,7 +2,7 @@
 
 A web-based platform for managing and accessing research papers, designed for the **RVCE**. The system provides role-based dashboards for students, authors, and admins, ensuring efficient paper management and accessibility.
 
----
+
 
 ## **Features**  
 
@@ -23,14 +23,13 @@ A web-based platform for managing and accessing research papers, designed for th
 - Secure **login and signup** pages.  
 - **Role-based access control** ensures restricted functionalities.  
 
----
 
 ## **Tech Stack**  
 🖥 **Frontend**: HTML, CSS, JavaScript  
 🖥 **Backend**: PHP  
 🗄 **Database**: MySQL  
 
----
+
 
 ## **Installation & Setup**  
 
@@ -54,24 +53,24 @@ Open the browser and visit:
 ```
 http://localhost/Research-Paper-Repository
 ```
----
+
 
 ## **Future Enhancements**  
 - 🔍 Advanced search filters.  
 - 📊 Admin analytics dashboard.  
 - 🔔 Notification system for new submissions.  
 
----
+
 
 ## **Contributors**  
 👩‍💻 **Anjali Heda** 
 
----
+
 
 ## **License**  
 This project is licensed under the [MIT License](LICENSE).  
 
----
+
 
 ### 🚀 *Feel free to fork, contribute, or report issues!*  
 
