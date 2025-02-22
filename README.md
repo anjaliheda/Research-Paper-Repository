@@ -31,7 +31,8 @@ A web-based platform for managing and accessing research papers, designed for th
 
 ## **Screenshots**
 ### **Student Dashboard**
-![Student Dashboard](landing.png "Landing Page")
+![Student Dashboard](img/Student Dashboard.png "DashBoard")
+![Dashboard](img/Dashboard.png "DashBoard")
 
 ### **Author Dashboard (Paper section - to add/edit their own papers)**
 ![Result](result.png "Result")
