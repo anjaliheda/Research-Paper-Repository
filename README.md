@@ -1,6 +1,6 @@
 # **Centralized Research Paper Repository**  
 
-A web-based platform for managing and accessing research papers, designed for the **RVCE**. The system provides role-based dashboards for students, authors, and admins, ensuring efficient paper management and accessibility.
+A web-based platform for managing and accessing the research papers published by students and faculty of RVCE. The system provides role-based dashboards for students, authors, and admins, ensuring efficient paper management and accessibility.
 
 
 
@@ -28,17 +28,6 @@ A web-based platform for managing and accessing research papers, designed for th
 🖥 **Frontend**: HTML, CSS, JavaScript  
 🖥 **Backend**: PHP  
 🗄 **Database**: MySQL  
-
-## **Screenshots**
-### **Student Dashboard**
-![Student Dashboard](img/Student Dashboard.png "DashBoard")
-![Dashboard](img/Dashboard.png "DashBoard")
-
-### **Author Dashboard (Paper section - to add/edit their own papers)**
-![Result](result.png "Result")
-
-### **Admin Dashboard(User Section - to add/edit users)**
-![Result](result.png "Result")
 
 ## **Installation & Setup**  
 
