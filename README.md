@@ -29,7 +29,15 @@ A web-based platform for managing and accessing research papers, designed for th
 🖥 **Backend**: PHP  
 🗄 **Database**: MySQL  
 
+## **Screenshots**
+### **Student Dashboard**
+![Student Dashboard](landing.png "Landing Page")
 
+### **Author Dashboard (Paper section - to add/edit their own papers)**
+![Result](result.png "Result")
+
+### **Admin Dashboard(User Section - to add/edit users)**
+![Result](result.png "Result")
 
 ## **Installation & Setup**  
 
